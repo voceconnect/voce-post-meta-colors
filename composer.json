@@ -1,0 +1,17 @@
+{
+    "name": "voceconnect/voce-post-meta-colors",
+    "description": "Voce Post Meta plugin extension for creating color fields",
+    "license": "GPLv2+",
+    "authors": [
+        {
+            "name": "Mark Parolisi",
+            "email": "mark@voceconnect.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+    },
+    "autoload": {
+        "files": ["voce-post-meta-colors.php"]
+    }
+}

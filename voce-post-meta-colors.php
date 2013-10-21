@@ -9,6 +9,8 @@
   License: GPL2
  */
 
+if ( !class_exists( 'Voce_Post_Meta_Colors' ) ) {
+
 class Voce_Post_Meta_Colors {
 
 	/**
@@ -96,3 +98,5 @@ function voce_color_field_display( $field, $value, $post_id ) {
 	</p>
 	<?php
 }
+
+}// End Class Check
