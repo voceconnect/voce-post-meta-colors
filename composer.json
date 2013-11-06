@@ -1,7 +1,7 @@
 {
     "name": "voceconnect/voce-post-meta-colors",
     "description": "Voce Post Meta plugin extension for creating color fields",
-    "type": "wordpress-plugin",
+    "type": "library",
     "license": "GPLv2+",
     "authors": [
         {
@@ -9,9 +9,6 @@
             "email": "mark@voceconnect.com"
         }
     ],
-    "minimum-stability": "stable",
-    "require": {
-    },
     "autoload": {
         "files": ["voce-post-meta-colors.php"]
     }
