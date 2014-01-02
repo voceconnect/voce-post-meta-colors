@@ -3,7 +3,7 @@
   Plugin Name: Voce Meta Colors
   Plugin URI: http://vocecommunications.com
   Description: Extends Voce Post Meta with a color picker field
-  Version: 1.0.0
+  Version: 1.0.1
   Author: markparolisi, voceplatforms
   Author URI: http://vocecommunications.com
   License: GPL2
