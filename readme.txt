@@ -2,7 +2,7 @@
 Contributors: markparolisi, voceplatforms
 Requires at least: 3.5.0
 Tested up to: 3.6
-Stable tag: 1.0.1
+Stable tag: 1.0.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -37,6 +37,9 @@ add_action('init', function(){
 ```
 
 == Changelog ==
+
+= 1.0.2 =
+* Added check for Voce_Meta_API
 
 = 1.0.0 =
 * Initial release
