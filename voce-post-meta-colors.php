@@ -17,9 +17,51 @@ class Voce_Post_Meta_Colors {
 	 * Setup plugin
 	 */
 	public static function initialize() {
+		add_action( 'admin_init', array( __CLASS__, 'admin_init' ) );
 		add_filter( 'meta_type_mapping', array(__CLASS__, 'meta_type_mapping') );
 		add_action( 'admin_enqueue_scripts', array(__CLASS__, 'action_admin_enqueue_scripts') );
 	}
+
+	/**
+	 * Add action for admin_notices
+	 * @method admin_init
+	 * @return void
+	 */
+	static function admin_init(){
+		add_action( 'admin_notices', array( __CLASS__, 'check_dependencies' ) );
+	}
+
+	/**
+	 * Display admin notice message
+	 * @method add_admin_notice
+	 * @param string $notice
+	 * @return void
+	 */
+	static function add_admin_notice( $notice ){
+		echo '<div class="error"><p>' . $notice . '</p></div>';
+	}
+
+	/**
+	 * Checks plugin dependencies
+	 * @method check_dependencies
+	 * @return void
+	 */
+	static function check_dependencies(){
+		$dependencies = array(
+			'Voce Post Meta' => array(
+				'url' => 'https://github.com/voceconnect/voce-post-meta',
+				'class' => 'Voce_Meta_API'
+			)
+		);
+
+		foreach( $dependencies as $plugin => $plugin_data ){
+			if ( !class_exists( $plugin_data['class'] ) ){
+				$notice = sprintf( 'The Voce Post Meta Post Selection UI Plugin cannot be utilized without the <a href="%s" target="_blank">%s</a> plugin.', esc_url( $plugin_data['url'] ), $plugin );
+				self::add_admin_notice( __( $notice, 'voce-post-meta-colors' ) );
+			}
+		}
+	}
+
 
 	/**
 	 * Enqueue admin JavaScripts
