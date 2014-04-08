@@ -56,7 +56,7 @@ class Voce_Post_Meta_Colors {
 
 		foreach( $dependencies as $plugin => $plugin_data ){
 			if ( !class_exists( $plugin_data['class'] ) ){
-				$notice = sprintf( 'The Voce Post Meta Post Selection UI Plugin cannot be utilized without the <a href="%s" target="_blank">%s</a> plugin.', esc_url( $plugin_data['url'] ), $plugin );
+				$notice = sprintf( 'The Voce Post Meta Colors Plugin cannot be utilized without the <a href="%s" target="_blank">%s</a> plugin.', esc_url( $plugin_data['url'] ), $plugin );
 				self::add_admin_notice( __( $notice, 'voce-post-meta-colors' ) );
 			}
 		}
