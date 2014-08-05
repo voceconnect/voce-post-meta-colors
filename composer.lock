@@ -1,0 +1,68 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
+    ],
+    "hash": "be6a34e0a7cd5aa8ca7a7e61c6b15294",
+    "packages": [
+        {
+            "name": "voceconnect/voce-post-meta",
+            "version": "1.5.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/voceconnect/voce-post-meta.git",
+                "reference": "8217196d0e35dde943214c25287c3e5b31040d02"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/voceconnect/voce-post-meta/zipball/8217196d0e35dde943214c25287c3e5b31040d02",
+                "reference": "8217196d0e35dde943214c25287c3e5b31040d02",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "voce-post-meta.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPLv2+"
+            ],
+            "authors": [
+                {
+                    "name": "Kevin Langley Jr",
+                    "email": "klangley@voceconnect.com"
+                },
+                {
+                    "name": "Jeff Stieler",
+                    "email": "jeff@voceconnect.com"
+                },
+                {
+                    "name": "Mark Parolisi",
+                    "email": "mark@voceconnect.com"
+                },
+                {
+                    "name": "Gary Smirny",
+                    "email": "gary@voceconnect.com"
+                },
+                {
+                    "name": "Michael Pretty",
+                    "email": "mpretty@voceconnect.com"
+                }
+            ],
+            "description": "Easily create post metaboxes and add fields",
+            "keywords": [
+                "post meta",
+                "wordpress"
+            ],
+            "time": "2014-08-05 14:34:20"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "platform": [],
+    "platform-dev": []
+}
