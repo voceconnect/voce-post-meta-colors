@@ -7,9 +7,10 @@ License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html  
 
 ## Description
-
 Extend Voce Post Meta with color picker (iris) fields
 
+
+## Usage
 ```php
 <?php
 add_action('init', function(){
@@ -22,7 +23,6 @@ add_action('init', function(){
 ```
 
 ## Installation
-
 1. Upload `voce-post-meta-colors` to the `/wp-content/plugins/` directory
 1. Activate the plugin through the 'Plugins' menu in WordPress
 1. Create post meta fields like this
