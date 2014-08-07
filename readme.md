@@ -1,16 +1,18 @@
-=== Voce Post Meta Colors ===
-Contributors: markparolisi, voceplatforms
-Requires at least: 3.5.0
-Tested up to: 3.6
-Stable tag: 1.1
-License: GPLv2 or later
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
+# Voce Post Meta Colors
+Contributors: markparolisi, voceplatforms  
+Requires at least: 3.5.0  
+Tested up to: 3.6  
+Stable tag: 1.1  
+License: GPLv2 or later  
+License URI: http://www.gnu.org/licenses/gpl-2.0.html  
 
+## Description
 Extend Voce Post Meta with color picker (iris) fields
 
-== Description ==
 
-```
+## Usage
+```php
+<?php
 add_action('init', function(){
   add_metadata_group( 'demo_meta', 'Page Options', array(
       'capability' => 'edit_posts'
@@ -20,13 +22,12 @@ add_action('init', function(){
 });
 ```
 
-== Installation ==
-
-
+## Installation
 1. Upload `voce-post-meta-colors` to the `/wp-content/plugins/` directory
 1. Activate the plugin through the 'Plugins' menu in WordPress
 1. Create post meta fields like this
-```
+```php
+<?php
 add_action('init', function(){
   add_metadata_group( 'demo_meta', 'Page Options', array(
       'capability' => 'edit_posts'
@@ -36,9 +37,9 @@ add_action('init', function(){
 });
 ```
 
-== Changelog ==
-= 1.1 =
+## Changelog
+**1.1**
 * Adding support for custom palette arg
 
-= 1.0.0 =
+**1.0.0**
 * Initial release
