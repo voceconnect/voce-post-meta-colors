@@ -1,16 +1,4 @@
 <?php
-/*
-  Plugin Name: Voce Meta Colors
-  Plugin URI: http://vocecommunications.com
-  Description: Extends Voce Post Meta with a color picker field
-  Version: 1.2.1
-  Author: markparolisi, voceplatforms
-  Author URI: http://vocecommunications.com
-  License: GPL2
- */
-
-if ( !class_exists( 'Voce_Post_Meta_Colors' ) ) {
-
 class Voce_Post_Meta_Colors {
 
 	/**
@@ -123,23 +111,3 @@ class Voce_Post_Meta_Colors {
 	}
 
 }
-
-Voce_Post_Meta_Colors::initialize();
-
-/**
- * Public function for the HTML field callback
- * @param object $field
- * @param string $value
- * @param int $post_id
- */
-function voce_color_field_display( $field, $value, $post_id ) {
-	$palettes = isset($field->args['palettes']) ? $field->args['palettes'] : true;
-	?>
-	<p>
-		<?php voce_field_label_display( $field ); ?>
-		<input data-palettes="<?php echo esc_attr(json_encode($palettes)); ?>" type="text" class="voce-color-picker" id="<?php echo esc_attr( $field->get_input_id( ) ); ?>" name="<?php echo esc_attr( $field->get_name( ) ); ?>" value="<?php echo esc_attr( $value ); ?>" />
-	</p>
-	<?php
-}
-
-}// End Class Check

@@ -38,6 +38,10 @@ add_action('init', function(){
 ```
 
 ## Changelog
+**1.3.0**
+* Preventing fatal error for setups that load dependencies before WordPress
+
+
 **1.1**
 * Adding support for custom palette arg
 
