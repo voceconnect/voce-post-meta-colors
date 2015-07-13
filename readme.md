@@ -38,6 +38,10 @@ add_action('init', function(){
 ```
 
 ## Changelog
+
+**1.3.1**
+* fixing bug with wrong has_action function
+
 **1.3.0**
 * Preventing fatal error for setups that load dependencies before WordPress
 
