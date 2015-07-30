@@ -2,7 +2,7 @@
 Contributors: markparolisi, voceplatforms  
 Requires at least: 3.5.0  
 Tested up to: 4.0  
-Stable tag: 1.3.2  
+Stable tag: 1.3.3
 License: GPLv2 or later  
 License URI: http://www.gnu.org/licenses/gpl-2.0.html  
 
@@ -38,6 +38,9 @@ add_action('init', function(){
 ```
 
 ## Changelog
+**1.3.3**
+* better handling around autoload files when required by multiple project dependencies
+
 **1.3.2**
 * moved to immediate initialization since admin_init was too late
 

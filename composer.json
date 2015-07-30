@@ -15,8 +15,7 @@
     "autoload": {
         "classmap": ["voce-post-meta-colors.php"],
         "files": [
-            "bootstrap.php",
-            "functions.php"
+            "bootstrap.php"
         ]
     }
 }
